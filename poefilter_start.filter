@@ -126,13 +126,21 @@ Show # $type->exoticbases $tier->exoticbasesmisc
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Show
 	Class "Stackable Currency"
-	BaseType "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb" "Rogue's Marker"
-	SetFontSize 45
-	SetBackgroundColor 234 134 91
-	SetTextColor 29 255 26
-	PlayAlertSound 4 170
-	MinimapIcon 0 Blue Circle
-	PlayEffect Blue
+	BaseType "Rogue's Marker"
+	SetBackgroundColor 34 34 51 
+    SetTextColor 29 255 26
+    SetFontSize 36
+	MinimapIcon 0 White Circle
+	PlayEffect White
+Show
+	Class "Stackable Currency"
+	BaseType "Prime Regrading Lens" "Secondary Regrading Lens" "Tempering Orb" "Tailoring Orb"
+	SetBackgroundColor 34 34 51 
+    SetTextColor 29 255 26
+    SetFontSize 45
+    PlayAlertSound 5 120
+	MinimapIcon 0 White Circle
+	PlayEffect White
 	
 Show
 	Class "Trinket"
@@ -1043,7 +1051,7 @@ Show
 	PlayEffect Green
 Show
     Class Currency
-    BaseType "Veiled Chaos Orb" "Exalted Shard" "Harbinger's Shard" "Ancient Shard" "Orb of Regret" "Vaal Orb" "Prime Sextant" "Awakened Sextant" "Chaos Orb" "Regal Orb" "Gemcutter's Prism" "Simple Sextant" "Orb of Alchemy" "Necromancy Net" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb" "Silver Coin"
+    BaseType "Veiled Chaos Orb" "Exalted Shard" "Harbinger's Shard" "Ancient Shard" "Orb of Regret" "Vaal Orb" "Prime Sextant" "Awakened Sextant" "Chaos Orb" "Regal Orb" "Gemcutter's Prism" "Simple Sextant" "Orb of Alchemy" "Necromancy Net" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb"
     SetBackgroundColor 34 34 51 
     SetTextColor 29 255 26
     SetFontSize 45
@@ -1060,7 +1068,13 @@ Show
 	MinimapIcon 0 White Circle
 	PlayEffect White
 Show
-    BaseType "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Ritual Splinter" 
+    BaseType "Ritual Splinter" "Silver Coin"
+    SetBackgroundColor 34 34 51 
+    SetTextColor 230 230 0
+    SetFontSize 36
+	DisableDropSound
+Show
+    BaseType "Orb of Chance" "Jeweller's Orb" "Chromatic Orb"
     SetBackgroundColor 34 34 51 
     SetTextColor 230 230 0
     SetFontSize 44
@@ -1090,7 +1104,7 @@ Hide
 #@@@@@@ Chancing Stuff @@@@@@@
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #  "Sorcerer Boots" "Gold Amulet"
-Show
+Hide
 	BaseType "Leather Belt" "Assembler Wand" "Congregator Wand" "Accumulator Wand" "Hollowpoint Dagger" "Pressurised Dagger" "Pneumatic Dagger" "Flickerflame Blade" "Flashfire Blade" "Infernal Blade" "Shadow Fangs" "Malign Fangs" "Void Fangs" "Maltreatment Axe" "Disapprobation Axe" "Psychotic Axe" "Fickle Spiritblade" "Capricious Spiritblade" "Anarchic Spiritblade" "Flare Mace" "Crack Mace" "Boom Mace" "Oscillating Sceptre" "Stabilising Sceptre" "Alternating Sceptre" "Hedron Bow" "Foundry Bow" "Solarine Bow" "Transformer Staff" "Reciprocation Staff" "Battery Staff" "Capacity Rod" "Potentiality Rod" "Eventuality Rod" "Prime Cleaver" "Honed Cleaver" "Apex Cleaver"  "Rebuking Blade" "Blasting Blade" "Banishing Blade" "Blunt Force Condenser" "Crushing Force Magnifier" "Impact Force Propagator" "Exhausting Spirit Shield" "Subsuming Spirit Shield" "Transfer-attuned Spirit Shield" "Endothermic Buckler" "Polar Buckler" "Cold-attuned Buckler" "Exothermic Tower Shield" "Magmatic Tower Shield" "Heat-attuned Tower Shield" "Micro-Distillery Belt" "Mechalarm Belt" "Astrolabe Amulet" "Simplex Amulet" "Cogwork Ring" "Geodesic Ring"
 	#Rarity = Normal
 	SetFontSize 45
@@ -1272,7 +1286,7 @@ Show
 
 Show
 	BaseType "Perandus Coin"
-	SetFontSize 42
+	SetFontSize 36
 	SetTextColor 255 178 135 255
 	SetBorderColor 255 178 135 135
 	PlayAlertSound 3 80	
@@ -1421,14 +1435,14 @@ Hide
 	SetBorderColor 255 125 0
 	SetBackgroundColor 71 55 35
 	DisableDropSound
-Hide
+Show
 	ItemLevel < 75
 	Class "Gloves" "Helm"
 	SetFontSize 36
 	SetBorderColor 51 102 255
 	SetBackgroundColor 71 55 34
 	DisableDropSound
-Hide
+Show
 	ItemLevel < 75
 	Class "Boots"
 	SetFontSize 36
