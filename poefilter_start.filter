@@ -1289,7 +1289,6 @@ Show
 	SetFontSize 36
 	SetTextColor 255 178 135 255
 	SetBorderColor 255 178 135 135
-	PlayAlertSound 3 80	
 
 Show
 	Class Currency

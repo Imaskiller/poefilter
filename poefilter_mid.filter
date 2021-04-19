@@ -1288,8 +1288,7 @@ Show
 	BaseType "Perandus Coin"
 	SetFontSize 36
 	SetTextColor 255 178 135 255
-	SetBorderColor 255 178 135 135
-	PlayAlertSound 3 80	
+	SetBorderColor 255 178 135 135	
 
 Show
 	Class Currency
