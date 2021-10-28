@@ -178,41 +178,187 @@ Show
 	MinimapIcon 0 Green Circle
 	PlayEffect Green
 	
-Show
-	Class "Heist Brooch"
-	SetFontSize 45
-	SetBackgroundColor  243 215 12  
-	SetTextColor 29 255 26
-	PlayAlertSound 4 170
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
+#===============================================================================================================
+# [[2500]] Heist Gear
+#===============================================================================================================
+# !! Chapter "Heist Gear"
 
-Show
+#------------------------------------
+#   [2501] Heist Cloak
+#------------------------------------
+# !! Override 310 : "Heist Cloaks"
+
+Show # %HS5 $type->heist->cloak $tier->t1highlevel
+	ItemLevel >= 83
+	Rarity <= Rare
 	Class "Heist Cloak"
+	BaseType "Whisper-woven Cloak"
 	SetFontSize 45
-	SetBackgroundColor  196 173 6
-	SetTextColor 29 255 26
-	PlayAlertSound 4 170
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
-	
-Show
-	Class "Heist Tool"
+	SetTextColor 250 165 0 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Raindrop
+
+Show # %H5 $type->heist->cloak $tier->t1
+	Rarity <= Rare
+	Class "Heist Cloak"
+	BaseType "Whisper-woven Cloak"
 	SetFontSize 45
-	SetBackgroundColor 140 124 8 
-	SetTextColor 29 255 26
-	PlayAlertSound 4 170
-	MinimapIcon 0 Green Circle
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect White
+	MinimapIcon 1 White Raindrop
+
+Show # %HS4 $type->heist->cloak $tier->t2
+	Rarity <= Rare
+	Class "Heist Cloak"
+	BaseType "Hooded Cloak"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+Hide # %HS3 $type->heist->cloak $tier->t3any
+	Rarity <= Rare
+	Class "Heist Cloak"
+	SetFontSize 40
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+#------------------------------------
+#   [2502] Heist Brooch
+#------------------------------------
+# !! Override 320 : "Heist Brooch"
+
+Show # %HS5 $type->heist->brooch $tier->t1highlevel
+	ItemLevel >= 84
+	Rarity <= Rare
+	Class "Heist Brooch"
+	BaseType "Foliate Brooch"
+	SetFontSize 45
+	SetTextColor 255 255 255 255              # TEXTCOLOR:	 Delirium Jewel Text
+	SetBorderColor 220 0 0 240              # BORDERCOLOR:	 Aspect High Potential
+	SetBackgroundColor 34 0 67 255          # BACKGROUND:	 Delirium Jewel Background
+	PlayAlertSound 4 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Raindrop
+
+Show # %H5 $type->heist->brooch $tier->t1
+	Rarity <= Rare
+	Class "Heist Brooch"
+	BaseType "Foliate Brooch"
+	SetFontSize 45
+	SetTextColor 255 255 255 255              # TEXTCOLOR:	 Delirium Jewel Text
+	SetBorderColor 220 0 0 240              # BORDERCOLOR:	 Aspect High Potential
+	SetBackgroundColor 34 0 67 255          # BACKGROUND:	 Delirium Jewel Background
+	PlayAlertSound 4 300
 	PlayEffect Green
-	
-Show
+	MinimapIcon 1 Green Raindrop
+
+Show # %HS4 $type->heist->brooch $tier->t2
+	Rarity <= Rare
+	Class "Heist Brooch"
+	BaseType "Enamel Brooch"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+Hide # %HS3 $type->heist->brooch $tier->t3any
+	Rarity <= Rare
+	Class "Heist Brooch"
+	SetFontSize 40
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+#------------------------------------
+#   [2503] Heist Gear
+#------------------------------------
+# !! Override 330 : "Heist Gear"
+
+Show # %HS5 $type->heist->gear $tier->t1highlevel
+	ItemLevel >= 81
+	Rarity <= Rare
 	Class "Heist Gear"
+	BaseType "Burst Band" "Obsidian Sharpening Stone" "Precise Arrowhead"
 	SetFontSize 45
-	SetBackgroundColor  100 89 8 
-	SetTextColor 29 255 26
-	PlayAlertSound 4 170
-	MinimapIcon 0 Green Circle
-	PlayEffect Green
+	SetTextColor 250 165 0 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Raindrop
+
+Show # %H5 $type->heist->gear $tier->t1
+	Rarity <= Rare
+	Class "Heist Gear"
+	BaseType "Burst Band" "Obsidian Sharpening Stone" "Precise Arrowhead"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect White
+	MinimapIcon 1 White Raindrop
+
+Show # %HS4 $type->heist->gear $tier->t2
+	Rarity <= Rare
+	Class "Heist Gear"
+	BaseType "Aggregator Charm" "Fine Sharpening Stone" "Fragmenting Arrowhead"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+Hide # %HS3 $type->heist->gear $tier->t3any
+	Rarity <= Rare
+	Class "Heist Gear"
+	SetFontSize 40
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+#------------------------------------
+#   [2504] Heist Tool
+#------------------------------------
+# !! Override 340 : "Heist Tool"
+
+Show # %HS5 $type->heist->tool $tier->t1highlevel
+	ItemLevel >= 83
+	Rarity <= Rare
+	Class "Heist Tool"
+	BaseType "Grandmaster Keyring" "Master Lockpick" "Regicide Disguise Kit" "Silkweave Sole" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder"
+	SetFontSize 45
+	SetTextColor 250 165 0 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Raindrop
+
+Show # %H5 $type->heist->tool $tier->t1
+	Rarity <= Rare
+	Class "Heist Tool"
+	BaseType "Grandmaster Keyring" "Master Lockpick" "Regicide Disguise Kit" "Silkweave Sole" "Steel Bracers" "Thaumaturgical Sensing Charm" "Thaumaturgical Ward" "Thaumetic Blowtorch" "Thaumetic Flashpowder"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect White
+	MinimapIcon 1 White Raindrop
+
+Show # %HS4 $type->heist->tool $tier->t2
+	Rarity <= Rare
+	Class "Heist Tool"
+	BaseType "Azurite Flashpowder" "Espionage Disguise Kit" "Fine Lockpick" "Polished Sensing Charm" "Runed Bracers" "Shining Ward" "Skeleton Keyring" "Sulphur Blowtorch" "Winged Sole"
+	SetFontSize 45
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
+
+Hide # %HS3 $type->heist->tool $tier->t3any
+	Rarity <= Rare
+	Class "Heist Tool"
+	SetFontSize 40
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 35 35 35 213
 		
 #------------------------------------
 #   [2310] Incubator
@@ -432,7 +578,14 @@ Show
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 Show
 	Class "Stackable Currency"
-	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil" "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Indigo Oil"
+	BaseType "Azure Oil" "Violet Oil" "Crimson Oil" "Black Oil" "Opalescent Oil" "Indigo Oil"
+	SetFontSize 45
+	SetBackgroundColor 34 34 51
+	SetTextColor 29 255 26
+	PlayAlertSound 4 170
+Hide
+	Class "Stackable Currency"
+	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil"
 	SetFontSize 45
 	SetBackgroundColor 34 34 51
 	SetTextColor 29 255 26
@@ -1150,7 +1303,13 @@ Show
 	PlayEffect White
 Hide
 	BaseType "Scroll of Wisdom" "Portal Scroll"
-	StackSize < 6
+	StackSize < 7
+	SetBackgroundColor 34 34 51 
+    SetTextColor 29 255 26
+    SetFontSize 45
+Show
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+	StackSize >= 7
 	SetBackgroundColor 34 34 51 
     SetTextColor 29 255 26
     SetFontSize 45
@@ -1370,21 +1529,21 @@ Show
 
 Show
 	Class "Gems"
-	Quality >= 12
+	Quality = 20
 	SetFontSize 40
     SetBackgroundColor 34 34 51 
     SetTextColor 92	172 238
 	
 Show
 	Class "Gems"
-	GemLevel >= 19
+	GemLevel = 20
 	SetFontSize 40
     SetBackgroundColor 34 34 51 
     SetTextColor 92	172 238
 
 Hide
 	Class "Gems"
-	Quality < 16
+	Quality < 20
 	SetBackgroundColor 34 34 51 
    	SetTextColor 92 172 238
 	DisableDropSound
@@ -1545,6 +1704,14 @@ Hide
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #HIDING THINGS
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Show
+	BaseType "Diamond Flask" "Stibnite Flask" "Quicksilver Flask" "Basalt Flask" "Jade Flask" "Granite Flask" "Quartz Flask"
+	ItemLevel > 83
+	SetFontSize 42
+	SetBackgroundColor 125 125 200
+	PlayAlertSound 2 250
+	MinimapIcon 0 Green Star
+	PlayEffect Green
 Hide
 	BaseType "Diamond Flask" "Stibnite Flask" "Gold Flask" "Corundum Flask" "Iron Flask"
 	SetFontSize 42
