@@ -583,13 +583,12 @@ Show
 	SetBackgroundColor 34 34 51
 	SetTextColor 29 255 26
 	PlayAlertSound 4 170
-Hide
+Show
 	Class "Stackable Currency"
 	BaseType "Clear Oil" "Sepia Oil" "Amber Oil" "Verdant Oil" "Teal Oil"
 	SetFontSize 45
 	SetBackgroundColor 34 34 51
 	SetTextColor 29 255 26
-	PlayAlertSound 4 170
 Show
 	Class "Stackable Currency"
 	BaseType "Silver Oil" "Golden Oil" "Tainted Oil"
@@ -1181,7 +1180,7 @@ Show
 #Trash Cards
 Hide
     Class "Divination Card"
-  	BaseType "The Last Supper" "The Coming Storm" "The Adventuring Spirit" "The Deep Ones" "Thirst for Knowledge" "The Life Thief" "The Endurance" "The Witch" "The Opulent" "Rain of Chaos" "The Betrayal" "The Flora's Gift" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Birth of the Three" "Cartographer's Delight" "Death" "Destined to Crumble" "Dying Anguish" "Her Mask" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Feast" "The Forsaken" "The Gentleman" "The Hermit" "The Incantation" "The Inoculated" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Siren" "The Spoiled Prince" "The Sun" "The Surgeon" "The Visionary" "The Web" "The Wolf's Shadow" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" 
+  	BaseType "The King's Blade" "The Last Supper" "The Coming Storm" "The Adventuring Spirit" "The Deep Ones" "Thirst for Knowledge" "The Life Thief" "The Endurance" "The Witch" "The Opulent" "Rain of Chaos" "The Betrayal" "The Flora's Gift" "A Mother's Parting Gift" "Anarchy's Price" "Assassin's Favour" "Audacity" "Birth of the Three" "Cartographer's Delight" "Death" "Destined to Crumble" "Dying Anguish" "Her Mask" "Lantador's Lost Love" "Light and Truth" "Might is Right" "Prosperity" "Rain Tempter" "Struck by Lightning" "The Carrion Crow" "The Conduit" "The Demoness" "The Dragon" "The Drunken Aristocrat" "The Feast" "The Forsaken" "The Gentleman" "The Hermit" "The Incantation" "The Inoculated" "The Lich" "The Lion" "The Lord in Black" "The Lover" "The Lunaris Priestess" "The Metalsmith's Gift" "The Oath" "The Pack Leader" "The Pact" "The Rabid Rhoa" "The Scarred Meadow" "The Sigil" "The Siren" "The Spoiled Prince" "The Sun" "The Surgeon" "The Visionary" "The Web" "The Wolf's Shadow" "Thunderous Skies" "Tranquillity" "Turn the Other Cheek" 
 	SetBackgroundColor 34 34 51 
 	SetTextColor 252 84 12
 	SetFontSize 40
@@ -1208,7 +1207,7 @@ Show
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@	
 Hide
 	Class Currency
-	BaseType "Chaos Shard" "Regal Shard" "Alchemy Shard" "Engineer's Shard" "Horizon Shard" "Transmutation Shard" "Alteration Shard" 
+	BaseType "Alchemy Shard" "Engineer's Shard" "Horizon Shard" "Transmutation Shard" "Alteration Shard" 
 	SetBackgroundColor 34 34 51 	
     SetTextColor 29 255 26
     SetFontSize 45
@@ -1278,7 +1277,7 @@ Show
 	PlayEffect Green
 Show
     Class Currency
-    BaseType "Veiled Chaos Orb" "Exalted Shard" "Harbinger's Shard" "Ancient Shard" "Orb of Regret" "Vaal Orb" "Prime Sextant" "Awakened Sextant" "Chaos Orb" "Regal Orb" "Gemcutter's Prism" "Simple Sextant" "Orb of Alchemy" "Necromancy Net" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb"
+    BaseType "Orb of Horizon" "Orb of Binding" "Veiled Chaos Orb" "Exalted Shard" "Harbinger's Shard" "Ancient Shard" "Orb of Regret" "Vaal Orb" "Prime Sextant" "Awakened Sextant" "Chaos Orb" "Regal Orb" "Gemcutter's Prism" "Simple Sextant" "Orb of Alchemy" "Necromancy Net" "Orb of Fusing" "Cartographer's Chisel" "Orb of Scouring" "Blessed Orb"
     SetBackgroundColor 34 34 51 
     SetTextColor 29 255 26
     SetFontSize 45
@@ -1585,7 +1584,6 @@ Show
 	SetFontSize 45
 	SetTextColor 255 45 175
 	SetBackgroundColor 34 34 51
-	
 Show
 	Class Fragment "Map Fragments"
 	BaseType "Divine Vessel"
